@@ -1,44 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Setkeo</title>
-  </head>
-  <body class="font-svngilroy">
-    <header class="header border-b shadow-sm">
-      <div class="container max-w-[1400px] mx-auto">
-        <div class="navbar flex justify-between items-center my-3">
-          <div class="navbar__logo flex">
-            <div class="flex items-center">
-              <p class="w-[98px]">
-                <img src="./img/logo/Setkeo.png" alt="logo setkeo">
-              </p>
-            </div>
-            <div class="navbar__search w-[304px] ml-[29px] flex">
-              <img class="z-10" src="./img/svg/search-header.svg" alt="search header">
-              <input class="block w-full py-[7px] pl-[54.5px] -ml-7 bg-[#F8F8F8] rounded-full" type="text" name="search" id="search" placeholder="Tìm kiếm">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <title>Setkeo</title>
+</head>
+
+<body class="font-svngilroy">
+  <header class="header border-b shadow-sm">
+    <section class="container max-w-[1400px] mx-auto">
+      <div class="navbar flex justify-between items-center my-3">
+        <div class="navbar__logo flex">
+          <div class="flex items-center">
+            <p class="w-[98px]">
+              <img src="./img/logo/Setkeo.png" alt="logo setkeo">
+            </p>
+          </div>
+          <div class="navbar__search w-[304px] ml-[29px] flex">
+            <img class="z-10" src="./img/svg/search-header.svg" alt="search header">
+            <input class="block w-full py-[7px] pl-[54.5px] -ml-7 bg-[#F8F8F8] rounded-full" type="text" name="search"
+              id="search" placeholder="Tìm kiếm">
+          </div>
+        </div>
+
+        <div class="navbar__login flex">
+          <div class="relative mr-[16px]">
+            <img src="./img/svg/Bell.svg" alt="bell">
+            <div
+              class="absolute bg-orangeprimary border-transparent top-0 right-1 rounded-full border-[3px] border-solid">
             </div>
           </div>
-         
-          <div class="navbar__login flex">
-            <div class="relative mr-[16px]">
-              <img src="./img/svg/Bell.svg" alt="bell">
-              <div class="absolute bg-orangeprimary border-transparent top-0 right-1 rounded-full border-[3px] border-solid"></div>
-            </div>
-            <div class="navbar__access">
-              <a class="hover:underline" href="#">Chào Tú</a>
-            </div>
-          </div> 
+          <div class="navbar__access">
+            <a class="hover:underline" href="#">Chào Tú</a>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
+    </section>
+  </header>
+  <main>
+    <section class="navigation">
+      <div class="container max-w-[1400px] mx-auto">
+        <div class="nav-bar flex py-[12px] items-center">
+          <ul class="flex font-light">
+            <li class="flex py-[20.5px]">
+              <img src="./img/svg/pinglocation-main.svg" alt="checklocation">
+              <a href="#">Nơi bạn muốn đến</a>
+            </li>
+            <li class="py-[20.5px] ml-9">
+              <a href="#">Tất cả</a>
+            </li>
+            <li class="py-[20.5px] ml-9">
+              <a href="#">Địa điểm ăn uống</a>
+            </li>
+            <li class="py-[20.5px] ml-9">
+              <a href="#">Địa điểm vui chơi</a>
+            </li>
+            <li class="py-[20.5px] ml-9">
+              <a href="#">Check in khám phá</a>
+            </li>
+          </ul>
+          <p class="w-0.5 h-8 border mx-7"></p>
+          <button class="button-setkeo rounded-full px-[12px] py-[8px] text-white font-bold">Lên kèo hội nhóm</button>
+        </div>
+      </div>
+    </section>
+    <section class="slide-bestchoice container max-w-[1400px] mx-auto">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="w-[939px]">
+              <img src="./img/unsplash_T7K4aEPoGGk.png" alt="bg-testing1">
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <p class="w-[451px]">
+              <img src="./img/unsplash_nYgy58eb9aw.png" alt="bg-testing2">
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <p class="w-[451px]">
+              <img src="./img/unsplash_nYgy58eb9aw.png" alt="bg-testing2">
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <p class="w-[451px]">
+              <img src="./img/unsplash_nYgy58eb9aw.png" alt="bg-testing2">
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
 
-    </main>
-    <footer></footer>
-    <script type="module" src="/main.js"></script>
-  </body>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script type="module" src="/js/main.js"></script>
+
+</body>
+
 </html>

@@ -10,8 +10,13 @@ module.exports = {
         orangeprimary: "#EB5757"
       }
     },
+
     fontFamily: {
       'svngilroy': ['"SVN Gilroy"', 'sans-serif'],
+    },
+
+    backgroundImage: {
+      
     }
   },
   plugins: [],

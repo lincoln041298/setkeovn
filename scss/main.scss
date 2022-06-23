@@ -4,6 +4,9 @@
 @import "./base/base";
 @import "./base/typhogrophy";
 
+@import "./components/buttons";
+@import "./components/slide-main";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
