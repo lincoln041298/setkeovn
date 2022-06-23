@@ -1,6 +1,10 @@
 img {
   max-width: 100%; }
 
+@font-face {
+  font-family: "SVN Gilroy";
+  src: url("../libs/font-svn/SVN-Gilroy Regular.otf"); }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

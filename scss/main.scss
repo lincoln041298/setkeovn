@@ -1,7 +1,8 @@
 @import "./abstracts/mixin";
 @import "./abstracts/variable";
 
-@import "./base/_base";
+@import "./base/base";
+@import "./base/typhogrophy";
 
 @tailwind base;
 @tailwind components;

@@ -7,25 +7,31 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Setkeo</title>
   </head>
-  <body>
-    <header>
+  <body class="font-svngilroy">
+    <header class="header border-b shadow-sm">
       <div class="container max-w-[1400px] mx-auto">
-        <div class="navbar flex">
-          <div class="navbar__logo">
-            <p class="w-[98px]">
-              <img src="./img/logo/Setkeo.png" alt="logo setkeo">
-            </p>
+        <div class="navbar flex justify-between items-center my-3">
+          <div class="navbar__logo flex">
+            <div class="flex items-center">
+              <p class="w-[98px]">
+                <img src="./img/logo/Setkeo.png" alt="logo setkeo">
+              </p>
+            </div>
+            <div class="navbar__search w-[304px] ml-[29px] flex">
+              <img class="z-10" src="./img/svg/search-header.svg" alt="search header">
+              <input class="block w-full py-[7px] pl-[54.5px] -ml-7 bg-[#F8F8F8] rounded-full" type="text" name="search" id="search" placeholder="Tìm kiếm">
+            </div>
           </div>
-          <div class="navbar__search">
-            <input type="text" placeholder="Tìm kiếm">
-          </div>
-          <div class="navbar__login relative">
-            <img src="./img/svg/Bell.svg" alt="bell">
-            <div class="absolute bg-orangeprimary border-transparent top-0 right-1 rounded-full border-[3px] border-solid"></div>
-          </div>
-          <div class="navbar__access">
-            <a class="hover:underline" href="#">Chào Tú</a>
-          </div>
+         
+          <div class="navbar__login flex">
+            <div class="relative mr-[16px]">
+              <img src="./img/svg/Bell.svg" alt="bell">
+              <div class="absolute bg-orangeprimary border-transparent top-0 right-1 rounded-full border-[3px] border-solid"></div>
+            </div>
+            <div class="navbar__access">
+              <a class="hover:underline" href="#">Chào Tú</a>
+            </div>
+          </div> 
         </div>
       </div>
     </header>
