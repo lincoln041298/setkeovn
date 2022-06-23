@@ -49,7 +49,7 @@
         <div class="nav-bar flex py-[12px] items-center">
           <ul class="flex font-light">
             <li class="flex py-[20.5px]">
-              <img src="./img/svg/pinglocation-main.svg" alt="checklocation">
+              <img class="mr-2.5" src="./img/svg/pinglocation-main.svg" alt="checklocation">
               <a href="#">Nơi bạn muốn đến</a>
             </li>
             <li class="py-[20.5px] ml-9">
@@ -84,8 +84,8 @@
             </p>
           </div>
           <div class="swiper-slide">
-            <p class="w-[451px]">
-              <img src="./img/unsplash_nYgy58eb9aw.png" alt="bg-testing2">
+            <p class="w-[939px]">
+              <img src="./img/unsplash_T7K4aEPoGGk.png" alt="bg-testing1">
             </p>
           </div>
           <div class="swiper-slide">
@@ -94,21 +94,100 @@
             </p>
           </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <section class="service-hightquality mt-24 relative">
+      <p class="absolute">
+        <img src="./img/big-bg.png" alt="big-bg">
+      </p>
+      <div class="container max-w-[1400px] mx-auto">
+        <div class="swiper best-serviceSwiper">
+          <p class="mb-12"><a href="#" class="font-bold text-3xl text-[#494949]">Các dịch vụ nổi bật</a></p>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bg-white flex flex-col w-[332px] p-[18px] rounded-xl"> 
+                <p class="tag-intro__img">
+                  <img class="w-full" src="./img/best-servicemain.png" alt="image for service">
+                </p>
+                <div class="flex flex-col">
+                  <div class="">
+                    <h2>Trải nghiệm bay dù lượn Đồi Bù, Hà Nội</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel, mattis nibh mauris leo nibh.</p>
+                  </div>
+                  <div> 
+                    <div>
+                      <p>Chi phí từ:  1.290.000 đ </p>
+                      <p>Người đăng : Admin</p>
+                    </div>
+                    <button>
+                      Sét kèo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p class="tag-intro__img">
+                <img class="w-full" src="./img/best-servicemain2.png" alt="image for service">
+              </p>
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <p class="tag-intro__img">
+                <img class="w-full" src="./img/best-servicemain3.png" alt="image for service">
+              </p>
+              <div></div>
+            </div>
+            <div class="swiper-slide">
+              <p class="tag-intro__img">
+                <img class="w-full" src="./img/best-servicemain4.png" alt="image for service">
+              </p>
+              <div></div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+
   </main>
   <footer></footer>
-
   <script src="./js/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: "auto",
-      centeredSlides: true,
-      spaceBetween: 30,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper = new Swiper(".best-serviceSwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-nextmain",
+        prevEl: ".swiper-button-prevmain",
       },
     });
   </script>
